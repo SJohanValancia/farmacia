@@ -1,5 +1,7 @@
 import { apiFetch } from "./utils/api.js";
 
+
+
 // Referencias a elementos del DOM
 const productosContainer = document.getElementById("productos");
 const buscarInput = document.getElementById("buscar");
@@ -7,6 +9,9 @@ const loader = document.getElementById("loader");
 
 // Variable global para almacenar los productos cargados
 let productosGlobales = [];
+
+
+
 
 // Función para normalizar texto (quita tildes y convierte a minúsculas)
 function normalizarTexto(texto) {

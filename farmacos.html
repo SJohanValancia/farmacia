@@ -98,9 +98,25 @@
                 padding: 8px 12px;
             }
         }
+
+        .btn {
+            background: #3498db;
+            color: white;
+            border: none;
+            padding: 12px;
+            width: 100%;
+            font-size: 16px;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: 0.3s;
+        }
+
     </style>
 </head>
 <body>
+
+    <button class="btn" onclick="window.location.href='index.html'" >volver al Inicio</button>
+
     <div class="container">
         <h2>Escribe el síntoma que tienes (Ej: gripa) o qué es lo que sientes (Ej: dolor de cabeza):</h2>
         <input id="buscar" placeholder="Buscar" type="text">
@@ -110,6 +126,7 @@
     </div>
 
     <script type="module" src="farmacos.js"  >
+
 
     </script>
 </body>
