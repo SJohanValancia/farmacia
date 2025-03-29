@@ -13,7 +13,7 @@ app.use(express.json({ limit: '50mb' })); // Aumentamos el límite para manejar 
 
 // 🟢 Habilitar CORS para permitir peticiones desde el frontend
 app.use(cors({
-    origin: [ "https://farmaciaaa.netlify.app"],
+    origin: [ "https://farmaciaaa.netlify.app/"],
     methods: ["GET", "POST", "PUT", "DELETE"],
     allowedHeaders: ["Content-Type", "Authorization"]
 }));

@@ -11,12 +11,15 @@
         margin: 0; /* Elimina los márgenes predeterminados del navegador */
         padding: 0; /* Elimina los espacios internos */
         height: 100%; /* La página ocupa toda la altura */
+        overflow-y: auto;
+        
     }
     
     /* Contenedor principal */
     .contenedor {
         position: relative; /* Permite posicionar elementos hijos de forma absoluta */
         height: 100vh; /* Altura del contenedor igual a la pantalla completa */
+        padding-top: 20px
     }
     
     /* Imagen */
@@ -56,12 +59,14 @@
         justify-content: center;
         align-items: center;
         overflow-x: hidden;
+        overflow-y: auto;
     }
     
     .container {
         width: 90%;
         max-width: 600px;
         background-color: transparent;
+        padding-top: 20px
     }
     
     .section {
@@ -204,11 +209,13 @@
 body {
     font-family: Arial, sans-serif;
     background: linear-gradient(to bottom right, #a1c6ea, #ffffff);
-    height: 100vh;
+    height: auto;
     display: flex;
     justify-content: center;
     align-items: center;
     margin: 0;
+    
+    
 }
 
 /* Contenedor del formulario */
@@ -224,6 +231,7 @@ body {
 
 /* Título */
 .title {
+    
     font-size: 24px;
     margin-bottom: 15px;
     color: #ffffff;
@@ -294,7 +302,7 @@ body {
   }  
 
   .villaCecilia {  
-      font-size: 40px;  
+      font-size: 30px;  
       letter-spacing: 2px;  
   }  
 
@@ -352,7 +360,7 @@ body {
 
     <div class="container">
         <center>
-            <h1 class="villaCecilia">FARMACIA 
+            <h1 class="villaCecilia">bienvenido a
                 villa cecilia 
             </h1>
             <div id="sections-container">
