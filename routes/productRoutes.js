@@ -1,6 +1,6 @@
 const express = require("express");
 const mongoose = require("mongoose");
-const Product = require("../models/Product");
+const Product = require("../models/Prodct");
 const auth = require("../middleware/auth"); // Importamos el middleware de autenticación
 const router = express.Router();
 
