@@ -30,7 +30,8 @@ async function loadProducts() {
                 <img src="${product.imagen}" alt="${product.nombre}" style="max-width: 100%; height: auto;">
                 <h3>${product.nombre}</h3>
                 <p>${product.descripcion}</p>
-                <p><strong>Precio:</strong> $${product.precio.toFixed(2)}</p>
+               <p><strong>Precio:</strong> $${Number(product.precio)?.toFixed(2) || "0.00"}</p>
+
                 <button class="btn-small edit-btn" data-id="${product._id}">Editar</button>
                 <button class="btn-small" style="background: #e74c3c;" data-id="${product._id}">Eliminar</button>
             `;
