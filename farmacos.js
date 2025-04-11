@@ -90,9 +90,9 @@ function mostrarProductos(productos) {
             <img src="${producto.imagen}" alt="${producto.nombre}">
             <h3>${producto.nombre}</h3>
             <p class="descripcion">${producto.descripcion}</p>
-            <p>$${producto.precio.toFixed(2)}</p>
+        <p>$${Number(producto.precio)?.toFixed(2) || "0.00"}</p>
             <a href="https://wa.me/${whatsappNumber}?text=${whatsappMessage}" 
-               class="btn-whatsapp" target="_blank">
+            class="btn-whatsapp" target="_blank">
                 Comprar por WhatsApp
             </a>
         `;
